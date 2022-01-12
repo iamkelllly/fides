@@ -1,12 +1,12 @@
-# Running Fidesctl in Docker
+# Running Fidesctl with Docker Compose
 
 ---
 
-The recommended way to get Fidesctl running is via Docker. The following guide will describe how to get things going, step-by-step.
+The recommended method for running Fidesctl is via a Docker Compose environment. 
 
 ## System Requirements
 
-Docker and Docker-Compose are the only requirements here.
+Docker and Docker-Compose are all that is needed to get started.
 
 1. Install `docker` locally (see [Docker Desktop](https://www.docker.com/products/docker-desktop) or your preferred installation). The minimum verified Docker version is `20.10.8`
 1. If your `docker` installation did not include `docker-compose`, make sure to get at least version `1.29.0`. Installation instructions can be found [here](https://docs.docker.com/compose/install/).
@@ -64,7 +64,7 @@ volumes:
 
 ```
 
-Now we can start interacting with our installation. Let's run the following commands to get going:
+Now we can start interacting with our installation. Let's run the following commands to launch and verify our setup:
 
 1. `docker-compose up -d` -> This will spin up the docker-compose file in the background
 1. `docker-compose run --rm fidesctl /bin/bash` -> Opens a shell within the fidesctl container
