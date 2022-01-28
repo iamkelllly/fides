@@ -8,8 +8,7 @@ The recommended way to get Fidesctl running is via Docker. The following guide w
 
 Docker and Docker-Compose are the only requirements here.
 
-1. Install `docker` locally (see [Docker Desktop](https://www.docker.com/products/docker-desktop) or your preferred installation). The minimum verified Docker version is `20.10.8`
-1. If your `docker` installation did not include `docker-compose`, make sure to get at least version `1.29.0`. Installation instructions can be found [here](https://docs.docker.com/compose/install/).
+Follow the installation instructions in the [Installation with Docker](../installation/docker.md#installation) guide.
 
 ## Docker Setup
 

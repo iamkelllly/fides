@@ -4,11 +4,19 @@ Docker is a platform as a service that bundles software into containers, each of
 
 The fidesctl community releases a production-ready reference container image of fidesctl for the ease of deployment in production.
 
+## Installation
+
+1. Install `docker` locally (see [Docker Desktop](https://www.docker.com/products/docker-desktop) or your preferred installation). The minimum verified Docker version is `20.10.8`.
+1. Confirm whether you have `docker-compose` using the command `docker-compose -v`. Make sure at least version `1.29.0` is installed. If your installation did not include `docker-compose`, installation instructions can be found in the [Docker Compose documentation](https://docs.docker.com/compose/install/).
+1. Run `docker pull ethyca/fidesctl` to pull the latest fidesctl container image from Docker Hub.
+
+Congratulations! Fidesctl is now installed on your machine. 
+
 ## Docker Hub Releases
 
 The following is an overview of the fidesctl Docker Hub release process, including release cadence and what's included. 
 
-**Release Cadences**
+**Release Cadence**
 
 Every time a new version of fidesctl is released, the images are available in the [ethyca/fidesctl DockerHub](https://hub.docker.com/r/ethyca/fidesctl/tags).
 
@@ -17,16 +25,6 @@ There are also mid-release versions (dirty versions) that get uploaded to Docker
 **What's Included**
 
 These reference images contain all of the extras and dependencies for running the Python application. However they do not contain the required Postgres database. Continue to [Setting up the database](./database.md).
-
-## Installation
-
-Install Docker and Docker Compose, then pull the latest container image from Docker Hub.
-
-1. Install `docker` locally (see [Docker Desktop](https://www.docker.com/products/docker-desktop) or your preferred installation). The minimum verified Docker version is `20.10.8`
-2. If your `docker` installation did not include `docker-compose`, make sure to get at least version `1.29.0`. Installation instructions can be found in the [Docker Compose documentation](https://docs.docker.com/compose/install/).
-3. Run `docker pull ethyca/fidesctl` to pull the latest fidesctl container image from Docker Hub.
-
-Congratulations! Fidesctl is now installed on your machine. 
 ## Next Steps
 
 You're now ready to start enforcing privacy with Fidesctl! Below are suggestions for continuing your journey.
