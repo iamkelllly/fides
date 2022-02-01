@@ -8,12 +8,12 @@ The recommended method for running Fidesctl is via a Docker Compose environment.
 
 Docker and Docker-Compose are all that is needed to get started.
 
-1. Install `docker` locally (see [Docker Desktop](https://www.docker.com/products/docker-desktop) or your preferred installation). The minimum verified Docker version is `20.10.8`
-1. If your `docker` installation did not include `docker-compose`, make sure to get at least version `1.29.0`. Installation instructions can be found [here](https://docs.docker.com/compose/install/).
+1. Install `docker` locally (see [Docker Desktop](https://www.docker.com/products/docker-desktop) or your preferred installation), or verify an existing `docker` version by running `docker -v`. The minimum verified Docker version is `20.10.8`.
+1. Confirm your `docker-compose` installation and version by running `docker-compose -v`. If your `docker` installation did not include `docker-compose`, or if your version is below `1.29.0`, follow the `docker-compose` installation instructions in the [Docker Documentation](https://docs.docker.com/compose/install/).
 
 ## Docker Setup
 
-This is a reference file that you can copy/paste into a local `docker-compose.yml` file. It will create a database and spin up the fidesctl webserver. Make sure that you don't have anything else running on port `5432` or `8080` before using this file.
+Copy and paste the following reference into a local `docker-compose.yml` file created at the root of your project directory. It will create a database and spin up the fidesctl webserver. Make sure that you don't have anything else running on port `5432` or `8080` before using this file.
 
 ```docker-compose title="docker-compose.yml"
 services:
@@ -64,7 +64,7 @@ volumes:
 
 ```
 
-Now we can start interacting with our installation. Let's run the following commands to launch and verify our setup:
+Now you can start interacting with your installation. Run the following commands to launch and verify your setup:
 
 1. `docker-compose up -d` -> This will spin up the docker-compose file in the background
 1. `docker-compose run --rm fidesctl /bin/bash` -> Opens a shell within the fidesctl container
